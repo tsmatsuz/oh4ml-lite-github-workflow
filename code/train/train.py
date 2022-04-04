@@ -93,3 +93,4 @@ model_file_name = 'arima_model.pkl'
 os.makedirs('./outputs', exist_ok=True)
 with open(model_file_name, 'wb') as file:
     joblib.dump(value=model_fit, filename='outputs/' + model_file_name)
+
