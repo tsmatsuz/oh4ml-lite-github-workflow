@@ -10,7 +10,7 @@ def init():
     import joblib
 
     # load the model from file into a global object
-    model_path = Model.get_model_path(model_name="arima_model_from_github.pkl")
+    model_path = Model.get_model_path(model_name="arima_model.pkl")
     model = joblib.load(model_path)
 
 
