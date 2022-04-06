@@ -9,7 +9,8 @@ def init():
     import joblib
 
     # load the model from file into a global object
-    model_path = Model.get_model_path(model_name="arima_model.pkl")
+    # model_path = Model.get_model_path(model_name="arima_model.pkl")
+    model_path = os.path.join(os.environ.get("AZUREML_MODEL_DIR"), "arima_model.pkl")
     model = joblib.load(model_path)
 
 def run(raw_data):
