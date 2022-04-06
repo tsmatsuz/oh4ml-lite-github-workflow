@@ -7,7 +7,6 @@ dependencies:
   - azure-ml-api-sdk==0.1.0a11
   - azureml-model-management-sdk==1.0.1b6.post1
   - azureml-monitoring==0.1.0a21
-  - azureml-defaults
   - statsmodels==0.12.2
   - scipy
   - scikit-learn
