@@ -4,7 +4,6 @@ import numpy
 from azureml.core.model import Model
 from statsmodels.tsa.arima_model import ARIMA
 
-
 def init():
     global model
     import joblib
@@ -12,7 +11,6 @@ def init():
     # load the model from file into a global object
     model_path = Model.get_model_path(model_name="arima_model.pkl")
     model = joblib.load(model_path)
-
 
 def run(raw_data):
     try:
